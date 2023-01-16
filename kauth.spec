@@ -5,11 +5,11 @@
 # Source0 file verified with key 0x58D0EE648A48B3BB (faure@kde.org)
 #
 Name     : kauth
-Version  : 5.101.0
-Release  : 59
-URL      : https://download.kde.org/stable/frameworks/5.101/kauth-5.101.0.tar.xz
-Source0  : https://download.kde.org/stable/frameworks/5.101/kauth-5.101.0.tar.xz
-Source1  : https://download.kde.org/stable/frameworks/5.101/kauth-5.101.0.tar.xz.sig
+Version  : 5.102.0
+Release  : 60
+URL      : https://download.kde.org/stable/frameworks/5.102/kauth-5.102.0.tar.xz
+Source0  : https://download.kde.org/stable/frameworks/5.102/kauth-5.102.0.tar.xz
+Source1  : https://download.kde.org/stable/frameworks/5.102/kauth-5.102.0.tar.xz.sig
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : BSD-3-Clause CC0-1.0 LGPL-2.0 LGPL-2.1
@@ -21,6 +21,9 @@ BuildRequires : buildreq-kde
 BuildRequires : extra-cmake-modules-data
 BuildRequires : kcoreaddons-dev
 BuildRequires : polkit-qt-dev
+# Suppress stripping binaries
+%define __strip /bin/true
+%define debug_package %{nil}
 
 %description
 # KAuth
@@ -69,31 +72,31 @@ license components for the kauth package.
 
 
 %prep
-%setup -q -n kauth-5.101.0
-cd %{_builddir}/kauth-5.101.0
+%setup -q -n kauth-5.102.0
+cd %{_builddir}/kauth-5.102.0
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1671047450
+export SOURCE_DATE_EPOCH=1673893033
 mkdir -p clr-build
 pushd clr-build
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export NM=gcc-nm
-export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=auto "
-export FCFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
-export FFLAGS="$FFLAGS -O3 -ffat-lto-objects -flto=auto "
-export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=auto "
+export CFLAGS="$CFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export FCFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export FFLAGS="$FFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
+export CXXFLAGS="$CXXFLAGS -O3 -fdebug-types-section -femit-struct-debug-baseonly -ffat-lto-objects -flto=auto -g1 -gno-column-info -gno-variable-location-views -gz "
 %cmake ..
 make  %{?_smp_mflags}
 popd
 
 %install
-export SOURCE_DATE_EPOCH=1671047450
+export SOURCE_DATE_EPOCH=1673893033
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/kauth
 cp %{_builddir}/kauth-%{version}/LICENSES/BSD-3-Clause.txt %{buildroot}/usr/share/package-licenses/kauth/9950d3fdce1cff1f71212fb5abd31453c6ee2f8c || :
@@ -261,9 +264,9 @@ popd
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/libKF5Auth.so.5
-/usr/lib64/libKF5Auth.so.5.101.0
+/usr/lib64/libKF5Auth.so.5.102.0
 /usr/lib64/libKF5AuthCore.so.5
-/usr/lib64/libKF5AuthCore.so.5.101.0
+/usr/lib64/libKF5AuthCore.so.5.102.0
 /usr/lib64/qt5/plugins/kauth/backend/kauth_backend_plugin.so
 /usr/lib64/qt5/plugins/kauth/helper/kauth_helper_plugin.so
 
