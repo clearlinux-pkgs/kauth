@@ -1,89 +1,32 @@
-libKF6AuthCore.so.6:KAuth::ExecuteJob::qt_metacall(QMetaObject::Call, int, void**)
-libKF6AuthCore.so.6:KAuth::ExecuteJob::qt_metacast(char const*)
-libKF6AuthCore.so.6:KAuth::ExecuteJob::statusChanged(KAuth::Action::AuthStatus)
-libKF6AuthCore.so.6:KAuth::ExecuteJob::kill(KJob::KillVerbosity)
-libKF6AuthCore.so.6:KAuth::ExecuteJob::start()
-libKF6AuthCore.so.6:KAuth::ExecuteJob::newData(QMap<QString, QVariant> const&)
-libKF6AuthCore.so.6:KAuth::ExecuteJob::~ExecuteJob()
-libKF6AuthCore.so.6:KAuth::ExecuteJob::~ExecuteJob()
-libKF6AuthCore.so.6:KAuth::ExecuteJob::~ExecuteJob()
-libKF6AuthCore.so.6:KAuth::ActionReply::deserialize(QByteArray const&)
-libKF6AuthCore.so.6:KAuth::ActionReply::SuccessReply()
-libKF6AuthCore.so.6:KAuth::ActionReply::setErrorCode(KAuth::ActionReply::Error)
+libKF6AuthCore.so.6:KAuth::Action::Action()
+libKF6AuthCore.so.6:KAuth::Action::execute(KAuth::Action::ExecutionMode)
+libKF6AuthCore.so.6:KAuth::Action::setParentWindow(QWindow*)
+libKF6AuthCore.so.6:KAuth::Action::setTimeout(int)
+libKF6AuthCore.so.6:KAuth::Action::~Action()
+libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply()
+libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply(KAuth::ActionReply::Type)
+libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply(int)
+libKF6AuthCore.so.6:KAuth::ActionReply::AlreadyStartedReply()
+libKF6AuthCore.so.6:KAuth::ActionReply::AuthorizationDeniedReply()
 libKF6AuthCore.so.6:KAuth::ActionReply::DBusErrorReply()
 libKF6AuthCore.so.6:KAuth::ActionReply::HelperBusyReply()
-libKF6AuthCore.so.6:KAuth::ActionReply::HelperErrorReply(int)
 libKF6AuthCore.so.6:KAuth::ActionReply::HelperErrorReply()
+libKF6AuthCore.so.6:KAuth::ActionReply::HelperErrorReply(int)
+libKF6AuthCore.so.6:KAuth::ActionReply::InvalidActionReply()
 libKF6AuthCore.so.6:KAuth::ActionReply::NoResponderReply()
 libKF6AuthCore.so.6:KAuth::ActionReply::NoSuchActionReply()
-libKF6AuthCore.so.6:KAuth::ActionReply::InvalidActionReply()
+libKF6AuthCore.so.6:KAuth::ActionReply::SuccessReply()
 libKF6AuthCore.so.6:KAuth::ActionReply::UserCancelledReply()
-libKF6AuthCore.so.6:KAuth::ActionReply::AlreadyStartedReply()
-libKF6AuthCore.so.6:KAuth::ActionReply::setErrorDescription(QString const&)
-libKF6AuthCore.so.6:KAuth::ActionReply::AuthorizationDeniedReply()
-libKF6AuthCore.so.6:KAuth::ActionReply::addData(QString const&, QVariant const&)
-libKF6AuthCore.so.6:KAuth::ActionReply::setData(QMap<QString, QVariant> const&)
-libKF6AuthCore.so.6:KAuth::ActionReply::setType(KAuth::ActionReply::Type)
 libKF6AuthCore.so.6:KAuth::ActionReply::setError(int)
-libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply(KAuth::ActionReply::Type)
-libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply(KAuth::ActionReply const&)
-libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply(int)
-libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply()
-libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply(KAuth::ActionReply::Type)
-libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply(KAuth::ActionReply const&)
-libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply(int)
-libKF6AuthCore.so.6:KAuth::ActionReply::ActionReply()
+libKF6AuthCore.so.6:KAuth::ActionReply::setErrorCode(KAuth::ActionReply::Error)
+libKF6AuthCore.so.6:KAuth::ActionReply::setType(KAuth::ActionReply::Type)
 libKF6AuthCore.so.6:KAuth::ActionReply::~ActionReply()
-libKF6AuthCore.so.6:KAuth::ActionReply::~ActionReply()
-libKF6AuthCore.so.6:KAuth::ActionReply::~ActionReply()
-libKF6AuthCore.so.6:KAuth::ActionReply::operator=(KAuth::ActionReply const&)
-libKF6AuthCore.so.6:KAuth::HelperSupport::helperMain(int, char**, char const*, QObject*)
-libKF6AuthCore.so.6:KAuth::HelperSupport::progressStep(QMap<QString, QVariant> const&)
-libKF6AuthCore.so.6:KAuth::HelperSupport::progressStep(int)
-libKF6AuthCore.so.6:KAuth::HelperSupport::callerUid()
-libKF6AuthCore.so.6:KAuth::HelperSupport::isStopped()
 libKF6AuthCore.so.6:KAuth::BackendsManager::authBackend()
 libKF6AuthCore.so.6:KAuth::BackendsManager::helperProxy()
-libKF6AuthCore.so.6:KAuth::Action::setTimeout(int)
-libKF6AuthCore.so.6:KAuth::Action::addArgument(QString const&, QVariant const&)
-libKF6AuthCore.so.6:KAuth::Action::setHelperId(QString const&)
-libKF6AuthCore.so.6:KAuth::Action::setArguments(QMap<QString, QVariant> const&)
-libKF6AuthCore.so.6:KAuth::Action::setDetailsV2(QMap<KAuth::Action::AuthDetail, QVariant> const&)
-libKF6AuthCore.so.6:KAuth::Action::setParentWindow(QWindow*)
-libKF6AuthCore.so.6:KAuth::Action::execute(KAuth::Action::ExecutionMode)
-libKF6AuthCore.so.6:KAuth::Action::setName(QString const&)
-libKF6AuthCore.so.6:KAuth::Action::Action(QString const&)
-libKF6AuthCore.so.6:KAuth::Action::Action(QString const&, QMap<KAuth::Action::AuthDetail, QVariant> const&)
-libKF6AuthCore.so.6:KAuth::Action::Action(KAuth::Action const&)
-libKF6AuthCore.so.6:KAuth::Action::Action()
-libKF6AuthCore.so.6:KAuth::Action::Action(QString const&)
-libKF6AuthCore.so.6:KAuth::Action::Action(QString const&, QMap<KAuth::Action::AuthDetail, QVariant> const&)
-libKF6AuthCore.so.6:KAuth::Action::Action(KAuth::Action const&)
-libKF6AuthCore.so.6:KAuth::Action::Action()
-libKF6AuthCore.so.6:KAuth::Action::~Action()
-libKF6AuthCore.so.6:KAuth::Action::~Action()
-libKF6AuthCore.so.6:KAuth::Action::operator=(KAuth::Action const&)
-libKF6AuthCore.so.6:KAuth::ExecuteJob::metaObject() const
-libKF6AuthCore.so.6:KAuth::ExecuteJob::data() const
-libKF6AuthCore.so.6:KAuth::ExecuteJob::action() const
-libKF6AuthCore.so.6:KAuth::ActionReply::serialized() const
-libKF6AuthCore.so.6:KAuth::ActionReply::errorDescription() const
-libKF6AuthCore.so.6:KAuth::ActionReply::data() const
-libKF6AuthCore.so.6:KAuth::ActionReply::type() const
-libKF6AuthCore.so.6:KAuth::ActionReply::error() const
-libKF6AuthCore.so.6:KAuth::ActionReply::failed() const
-libKF6AuthCore.so.6:KAuth::ActionReply::errorCode() const
-libKF6AuthCore.so.6:KAuth::ActionReply::succeeded() const
-libKF6AuthCore.so.6:KAuth::ActionReply::operator==(KAuth::ActionReply const&) const
-libKF6AuthCore.so.6:KAuth::ActionReply::operator!=(KAuth::ActionReply const&) const
-libKF6AuthCore.so.6:KAuth::Action::parentWindow() const
-libKF6AuthCore.so.6:KAuth::Action::name() const
-libKF6AuthCore.so.6:KAuth::Action::status() const
-libKF6AuthCore.so.6:KAuth::Action::isValid() const
-libKF6AuthCore.so.6:KAuth::Action::timeout() const
-libKF6AuthCore.so.6:KAuth::Action::helperId() const
-libKF6AuthCore.so.6:KAuth::Action::arguments() const
-libKF6AuthCore.so.6:KAuth::Action::detailsV2() const
-libKF6AuthCore.so.6:KAuth::Action::hasHelper() const
-libKF6AuthCore.so.6:KAuth::Action::operator==(KAuth::Action const&) const
-libKF6AuthCore.so.6:KAuth::Action::operator!=(KAuth::Action const&) const
+libKF6AuthCore.so.6:KAuth::ExecuteJob::kill(KJob::KillVerbosity)
+libKF6AuthCore.so.6:KAuth::ExecuteJob::start()
+libKF6AuthCore.so.6:KAuth::ExecuteJob::statusChanged(KAuth::Action::AuthStatus)
+libKF6AuthCore.so.6:KAuth::ExecuteJob::~ExecuteJob()
+libKF6AuthCore.so.6:KAuth::HelperSupport::callerUid()
+libKF6AuthCore.so.6:KAuth::HelperSupport::isStopped()
+libKF6AuthCore.so.6:KAuth::HelperSupport::progressStep(int)
